@@ -104,6 +104,8 @@ jobs:
         uses: netcracker/qubership-workflow-hub/actions/commit-and-push@main
         with:
           commit_message: "Update pom.xml version to ${{ github.event.inputs.version }}"
+          author_name: "$GITHUB_ACTOR"
+          author_email: "$GITHUB_ACTOR@users.noreply.github.com"
 
   mvn-package:
     needs: [update-pom-version]
