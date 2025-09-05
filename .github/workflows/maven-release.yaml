@@ -38,7 +38,7 @@ on:
       dry-run:
         required: false
         type: boolean
-        default: true
+        default: false
         description: 'Dry run'
 
 jobs:
