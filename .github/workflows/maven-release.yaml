@@ -23,7 +23,6 @@ on:
     inputs:
       version:
         required: true
-        default: '1.0.0'
         type: string
         description: 'Release version (e.g., 1.0.0)'
       java-version:
@@ -39,7 +38,7 @@ on:
       dry-run:
         required: false
         type: boolean
-        default: false
+        default: true
         description: 'Dry run'
 
 jobs:
